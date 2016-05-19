@@ -1,11 +1,26 @@
-/*
-	Comment
-*/
+html {
+}
 
-a { /* Comment */ color: /* Comment */ Red; }
+body{
+      width: 90%;
+      background-color: aqua;/*this can be changed */
+}
 
-.TestClass {
-	color: Black;
-	background-color: White;
-	text-align: left;
+#content{
+   
+}
+#graph{
+   
+}
+
+#map{
+   
+}
+
+#inputContent{
+   
+}
+
+#outputContent{
+   
 }
