@@ -1,22 +1,23 @@
 function income() {
    var inputNameElement = document.getElementById("inputContent");
    var I = inputNameElement.value;
-   var titleElement = document.getElementById("title");
+   var innerHTML = document.getElementById("outputContent");
 
   
 if (I<16000){
-   titleElement.innerHTML = "taxpayed = $0";
+   var TP = "taxpayed = $0";
+   statementDisplay.innerHTML = "tax payed = $" + TP;
 }
 else if (I<52500){
-  titleElement.innerHTML = ("tax payed = $" + ((R - 16000) * 0.1));
+  var TP = (R - 16000) * 0.1;
 }
 else if (I<113000){
-  titleElement.innerHTML = ("tax payed = $" + (((R - 52500)* 0.16) + 3650));
+  var TP = (((R - 52500)* 0.16) + 3650);
 }
 else if (I<184500){
-  titleElement.innerHTML = ("tax payed = $" + (((R - 113000)* 0.24) + 13330));
+  var TP = (((R - 113000)* 0.24) + 13330);
 }
 else{
-  titleElement.innerHTML = ("tax payed = $" + (((R - 184500)* 0.36) + 30490));
+  var TP = (((R - 184500)* 0.36) + 30490);
 }
 }
