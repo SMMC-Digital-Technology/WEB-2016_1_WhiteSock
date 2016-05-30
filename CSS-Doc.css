@@ -18,13 +18,16 @@ body{
 }
 
 #map{
-   
+ text-align: center;  
 }
 
 #inputContent{
-   
+   text-align: center;  
 }
 
 #outputContent{
-   
+   text-align: center;
+}
+footer{
+    text-align: center;
 }
