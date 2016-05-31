@@ -1,8 +1,6 @@
 
 
-function simpleInterest(principle, rate, time) {
-    return principle * rate * time;
-}
+
 function drawGraph() {
 
 
@@ -10,21 +8,21 @@ function drawGraph() {
 
    
     trace = {
-        x: [0, 16000, 52500, 113000, 184500, 5], 
-        y: [0, 12, 24, 26, 18, 10], 
+        x: [0, 16000, 52500, 113000, 184500], 
+        y: [0, 0, 920, 13330, 30490], 
         type: 'scatter', 
         mode: 'lines+markers',
-        name: "trace" // a name for the data to appear on the legend (if present)
+        name: "trace" 
     };
         data = [trace];
     layout = {
-        title: "A simple graph in Plotly",
+        title: "Tax Payement Graph ",
         yaxis: {
-            title: "y-axis",
+            title: "Amount of tax payed ($)",
             zerolinewidth: 1.5 
         },
         xaxis: {
-            title: "x-axis",
+            title: "Income ($)",
             zerolinewidth: 1.5,
             
         }
