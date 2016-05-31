@@ -1,4 +1,6 @@
-
+function simpleInterest(principle, rate, time) {
+    return principle * rate * time;
+}
 
 
 function drawGraph() {
@@ -14,7 +16,9 @@ function drawGraph() {
         mode: 'lines+markers',
         name: "trace" 
     };
-        data = [trace];
+   
+   data = [trace];
+   
     layout = {
         title: "Tax Payement Graph ",
         yaxis: {
@@ -24,10 +28,12 @@ function drawGraph() {
         xaxis: {
             title: "Income ($)",
             zerolinewidth: 1.5,
+           range: [0, 184500]
             
         }
     };
-    lotly.newPlot("graph", data, layout);
+   
+    Plotly.newPlot("graph", data, layout);
 }
 
 drawGraph();

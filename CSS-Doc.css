@@ -14,7 +14,9 @@ body{
    
 }
 #graph{
-   
+   height: auto;
+   width: 90%;
+   text-align: center;
 }
 
 #map{
