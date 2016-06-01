@@ -1,7 +1,3 @@
-function simpleInterest(principle, rate, time) {
-    return principle * rate * time;
-}
-
 
 function drawGraph() {
 
@@ -20,9 +16,9 @@ function drawGraph() {
    data = [trace];
    
     layout = {
-        title: "Tax Payement Graph ",
+        title: "Tax Payment Graph ",
         yaxis: {
-            title: "Amount of tax payed ($)",
+            title: "Amount of tax Paid ($)",
             zerolinewidth: 1.5 
         },
         xaxis: {

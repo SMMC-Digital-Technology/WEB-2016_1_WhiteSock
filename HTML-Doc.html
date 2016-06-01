@@ -1,49 +1,47 @@
 <!DOCTYPE html>
 <html>
-<head>
-   <meta charset="utf-8">
-   <title>Zabututi Tax</title>
-   <link href="CSS-Doc.css" rel="stylesheet">
-</head>
-<body>
-<header><!-- will display the Title -->
-   
-</header>
-<div id = "content"><!-- this is where all the input output fields go -->
-    
-   <div id = "graph" ><!-- the Graph -->
-        
-   </div>
-    <script src="plotly.JS"></script>
-    <script src="Graph.JS"></script>
+   <head>
+      <meta charset="utf-8">
+      <title>Zabututi Tax</title>
+      <link href="CSS-Doc.css" rel="stylesheet">
+   </head>
+   <body>
+   <header><!-- will display the Title -->
 
-   <div id = "inputContent"><!-- the input feild -->
-      <label>Income:
-         <input type="number" id="income" onInput="income()" min="0" >
-      </label>
-      <script src="Java-Doc.js"></script>
-   </div>
-   <div id = "outputContent"><!-- the output field -->
-      <br> This is where the tax will display.
-   </div>
-          
+   </header>
+   <div id = "content"><!-- this is where all the input output fields go -->
 
-      <div id = "map"><!-- this will be used to place the map on the page -->
+      <div id = "graph" ><!-- the Graph --></div>
+      <script src="plotly.JS"></script><!-- the graph library link -->
+      <script src="Graph.JS"></script> <!-- the graph link -->
 
-      <iframe 
-         width="500"
-         height="350"
-         frameborder="0" style="border:0"
-         src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAZpoMs4gbwcnd4RkQ4TsixnRtbgtCL6a0&q=Zabutovochnaya+ul.+1+Прокопьевск+Кемеровскаяобл+Russia+653008" allowfullscreen><!-- the webaddress for the map -->
-      </iframe>
-      
-   </div>
- </div>
-    
-<footer><!-- will have a phone number and other information -->
-     <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>This is our phone number to contact us: 4102 6584 9423 <br>
-   Our taxation office adress is :Zabutovochnaya ul. 1 Прокопьевск Кемеровскаяобл Russia 653008 
-</footer>
-    
-</body>
+      <div id = "inputContent"><!-- the input feild -->
+         <label>Income (type how much you earn to see what tax you will be paying) :
+            <input type="number" id="income" onInput="income()" min="0" >
+         </label>
+         <script src="Java-Doc.js"></script><!-- the calculator link -->
+      </div>
+      <div id = "outputContent"><!-- the output field -->
+         <br> Tax Paid = $
+      </div>
+
+
+         <div id = "map"><!-- this will be used to place the map on the page -->
+         <br>
+         <iframe 
+            width="500"
+            height="350"
+            frameborder="0" style="border:0"
+            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAZpoMs4gbwcnd4RkQ4TsixnRtbgtCL6a0&q=Zabutovochnaya+ul.+1+Прокопьевск+Кемеровскаяобл+Russia+653008" allowfullscreen><!-- the webaddress for the map -->
+         </iframe>
+
+      </div>
+    </div>
+
+   <footer><!-- will have a phone number and other information -->
+         <br> <br> <br>This is our phone number to contact us: 4102 6584 9423 <br>
+      Our taxation office adress is :Zabutovochnaya ul. 1 Прокопьевск Кемеровскаяобл Russia 653008 
+   </footer>
+
+   </body>
 </html>

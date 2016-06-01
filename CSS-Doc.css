@@ -7,29 +7,32 @@ html {
     color: white
 }
 body{
-      width: 90%;
-}
-
-#content{
-   
-}
-#graph{
-   height: auto;
    width: 90%;
-   text-align: center;
 }
 
-#map{
- text-align: center;  
+#graph{/* this is for the graph */
+  margin-left: auto;
+   margin-right: auto;
+   width: 90%;
 }
 
-#inputContent{
+#map{ /* for the map */
    text-align: center;  
 }
 
-#outputContent{
+#inputContent{ /* for the text neer the input box */
    text-align: center;
+   font-size: 30px;
 }
+#income{/* the input box */
+   height: 30px;
+}
+
+#outputContent{/* the output text */
+   text-align: center;
+   font-size: 30px;
+}
+
 footer{
     text-align: center;
 }
