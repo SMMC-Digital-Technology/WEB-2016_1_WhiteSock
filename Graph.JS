@@ -24,7 +24,7 @@ function drawGraph() {
         xaxis: {
             title: "Income ($)",
             zerolinewidth: 1.5,
-           range: [0, 184500]
+           range: [0, 194500]
             
         }
     };
